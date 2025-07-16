@@ -1,0 +1,122 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Insight: A Physics Learning Portal</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" />
+  <style>
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+    #chatbox {
+      height: 300px;
+      overflow-y: auto;
+      border: 1px solid #ccc;
+      padding: 1rem;
+      background: #f9f9f9;
+      margin-bottom: 1rem;
+    }
+    .user-message {
+      font-weight: bold;
+      margin-bottom: 0.5rem;
+    }
+    .bot-response {
+      margin-bottom: 1rem;
+    }
+    #scoreResult {
+      margin-top: 1rem;
+      font-weight: bold;
+    }
+    .accordion-content {
+      display: none;
+    }
+    .accordion-button[aria-expanded="true"] + .accordion-content {
+      display: block;
+    }
+  </style>
+</head>
+<body class="bg-gray-50 text-gray-800">
+  <header class="bg-blue-900 text-white py-6 shadow">
+    <div class="container mx-auto px-4">
+      <h1 class="text-3xl font-bold">Insight</h1>
+      <p class="text-sm text-blue-200">A Modern Physics Learning Portal for Undergraduates</p>
+    </div>
+  </header>
+
+  <nav class="bg-blue-100 py-3">
+    <div class="container mx-auto px-4 flex space-x-4">
+      <a href="#home" class="hover:underline font-medium">Home</a>
+      <a href="#resources" class="hover:underline font-medium">Resources</a>
+      <a href="#assessment" class="hover:underline font-medium">Assessment</a>
+      <a href="#chatbot" class="hover:underline font-medium">Ask AI</a>
+      <a href="#feedback" class="hover:underline font-medium">Feedback</a>
+    </div>
+  </nav>
+
+  <main class="container mx-auto px-4 py-8">
+    <section id="home" class="mb-12">
+      <h2 class="text-2xl font-semibold mb-2">Welcome to Insight</h2>
+      <p>This portal is designed to give undergraduate students a unified access point to core physics concepts, interactive tools, and an AI-based assistant. Start exploring today!</p>
+    </section>
+
+    <section id="resources" class="mb-12">
+      <h2 class="text-xl font-semibold mb-4">Learning Resources</h2>
+      <div class="space-y-4">
+        <div>
+          <button class="accordion-button text-left w-full text-lg font-medium bg-blue-200 px-4 py-2 rounded" aria-expanded="false" onclick="toggleAccordion(this)">📘 Sensors</button>
+          <div class="accordion-content mt-2 p-4 bg-blue-50 rounded">
+            <p><a href="https://drive.google.com/uc?export=download&id=1i6PqSdzeMdRXuB5VAoOzKKXQoC9cJ1xx" class="text-blue-600 underline" target="_blank">📄 Download Lecture Notes (PDF)</a></p>
+            <div class="mt-2">
+              <iframe class="w-full h-64 rounded" src="https://www.youtube.com/embed/LhY3Aav7tbA" title="Introduction to Sensors" frameborder="0" allowfullscreen></iframe>
+            </div>
+            <div class="mt-2">
+              <img src="https://upload.wikimedia.org/wikipedia/commons/2/2d/Sensor_types.png" alt="Sensor Concept Map" class="rounded shadow w-full max-w-xl" />
+            </div>
+            <p class="mt-2">🔗 <a href="https://phet.colorado.edu/en/simulations/category/physics" target="_blank" class="text-blue-600 underline">Interactive Simulation</a></p>
+            <div class="mt-4">
+              <h3 class="font-semibold">🧠 Interactive Mind Map</h3>
+              <iframe width="100%" height="480" allowfullscreen
+                src="https://mm.tt/embed/3769689751?t=MGDoKJSauv">
+              </iframe>
+            </div>
+            <div class="mt-6">
+              <h3 class="font-semibold text-lg">📺 Extra Video Resources</h3>
+              <div class="grid grid-cols-1 md:grid-cols-2 gap-4 mt-2" id="extraVideos">
+                <div>
+                  <iframe class="w-full h-52" src="https://www.youtube.com/embed/zxYeJW9v6OU" title="Sensor Lecture - Series 1" frameborder="0" allowfullscreen></iframe>
+                  <p class="mt-1 text-sm font-medium">Sensor Lecture Series 1</p>
+                </div>
+                <div>
+                  <iframe class="w-full h-52" src="https://www.youtube.com/embed/vt2XIOoCUQM" title="Sensor Lecture - Series 2" frameborder="0" allowfullscreen></iframe>
+                  <p class="mt-1 text-sm font-medium">Sensor Lecture Series 2</p>
+                </div>
+                <div>
+                  <iframe class="w-full h-52" src="https://www.youtube.com/embed/wpAA3qeOYiI" title="Sensor Animation" frameborder="0" allowfullscreen></iframe>
+                  <p class="mt-1 text-sm font-medium">Sensor Animation</p>
+                </div>
+                <div>
+                  <iframe class="w-full h-52" src="https://www.youtube.com/embed/nE1C4ghfvac" title="Applications of Sensors" frameborder="0" allowfullscreen></iframe>
+                  <p class="mt-1 text-sm font-medium">Applications of Sensors</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="bg-blue-900 text-white py-4 text-center">
+    &copy; 2025 Insight | Created by Dr. Prasobh C B, Dept. of Science & Humanities, Mar Athanasius College of Engineering, Kothamangalam, Kerala - 686666
+  </footer>
+
+  <script>
+    function toggleAccordion(button) {
+      const expanded = button.getAttribute("aria-expanded") === "true";
+      button.setAttribute("aria-expanded", !expanded);
+    }
+  </script>
+</body>
+</html>
