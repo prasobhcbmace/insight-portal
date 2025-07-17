@@ -1,27 +1,12 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Insight: A Physics Learning Portal</title>
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" />
-  <style>
-    body {
-      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    }
-    #scoreResult {
-      margin-top: 1rem;
-      font-weight: bold;
-    }
-    .accordion-content {
-      display: none;
-    }
-    .accordion-button[aria-expanded="true"] + .accordion-content {
-      display: block;
-    }
-  </style>
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
 </head>
-<body class="bg-gray-50 text-gray-800">
+<body class="bg-gray-50 text-gray-900">
   <header class="bg-blue-900 text-white py-6 shadow">
     <div class="container mx-auto px-4">
       <h1 class="text-3xl font-bold">Insight</h1>
@@ -34,13 +19,14 @@
       <a href="#home" class="hover:underline font-medium">Home</a>
       <a href="#resources" class="hover:underline font-medium">Resources</a>
       <a href="#assessment" class="hover:underline font-medium">Assessment</a>
+      <a href="https://phet.colorado.edu/en/simulations/category/physics" target="_blank" class="hover:underline font-medium">Simulations</a>
     </div>
   </nav>
 
   <main class="container mx-auto px-4 py-8">
     <section id="home" class="mb-12">
       <h2 class="text-2xl font-semibold mb-2">Welcome to Insight</h2>
-      <p>This portal is designed to give undergraduate students a unified access point to core physics concepts, interactive tools, and an AI-based assistant. Start exploring today!</p>
+      <p>This portal is designed to give undergraduate students a unified access point to core physics concepts, interactive tools, and curated resources. Start exploring today!</p>
     </section>
 
     <section id="resources" class="mb-12">
@@ -53,7 +39,6 @@
             <div class="mt-2">
               <img src="https://upload.wikimedia.org/wikipedia/commons/2/2d/Sensor_types.png" alt="Sensor Concept Map" class="rounded shadow w-full max-w-xl" />
             </div>
-            <p class="mt-2">🔗 <a href="https://phet.colorado.edu/en/simulations/category/physics" target="_blank" class="text-blue-600 underline">Interactive Simulation</a></p>
             <div class="mt-4">
               <h3 class="font-semibold">🧠 Interactive Mind Map</h3>
               <p class="text-sm text-gray-700">Click below to open the interactive mind map in a new tab.</p>
@@ -125,8 +110,57 @@
           <label><input type="radio" name="q3" value="c" /> c) Light</label><br />
           <label><input type="radio" name="q3" value="d" /> d) Pressure</label>
         </div>
+        <div class="space-y-2">
+          <p class="font-medium">4. Which of the following sensors is used to detect motion?</p>
+          <label><input type="radio" name="q4" value="a" /> a) Gyroscope</label><br />
+          <label><input type="radio" name="q4" value="b" /> b) Microphone</label><br />
+          <label><input type="radio" name="q4" value="c" /> c) Barometer</label><br />
+          <label><input type="radio" name="q4" value="d" /> d) Thermistor</label>
+        </div>
+        <div class="space-y-2">
+          <p class="font-medium">5. What type of sensor is used in cameras for light detection?</p>
+          <label><input type="radio" name="q5" value="a" /> a) IR Sensor</label><br />
+          <label><input type="radio" name="q5" value="b" /> b) Photodiode</label><br />
+          <label><input type="radio" name="q5" value="c" /> c) Ultrasonic Sensor</label><br />
+          <label><input type="radio" name="q5" value="d" /> d) Barometer</label>
+        </div>
+        <div class="space-y-2">
+          <p class="font-medium">6. A barometer measures:</p>
+          <label><input type="radio" name="q6" value="a" /> a) Temperature</label><br />
+          <label><input type="radio" name="q6" value="b" /> b) Pressure</label><br />
+          <label><input type="radio" name="q6" value="c" /> c) Humidity</label><br />
+          <label><input type="radio" name="q6" value="d" /> d) Motion</label>
+        </div>
+        <div class="space-y-2">
+          <p class="font-medium">7. An accelerometer measures:</p>
+          <label><input type="radio" name="q7" value="a" /> a) Velocity</label><br />
+          <label><input type="radio" name="q7" value="b" /> b) Acceleration</label><br />
+          <label><input type="radio" name="q7" value="c" /> c) Rotation</label><br />
+          <label><input type="radio" name="q7" value="d" /> d) Force</label>
+        </div>
+        <div class="space-y-2">
+          <p class="font-medium">8. A sensor used to detect sound is called:</p>
+          <label><input type="radio" name="q8" value="a" /> a) Microphone</label><br />
+          <label><input type="radio" name="q8" value="b" /> b) Thermistor</label><br />
+          <label><input type="radio" name="q8" value="c" /> c) LDR</label><br />
+          <label><input type="radio" name="q8" value="d" /> d) Photodiode</label>
+        </div>
+        <div class="space-y-2">
+          <p class="font-medium">9. What type of signal is typically produced by a digital sensor?</p>
+          <label><input type="radio" name="q9" value="a" /> a) Continuous signal</label><br />
+          <label><input type="radio" name="q9" value="b" /> b) Analog signal</label><br />
+          <label><input type="radio" name="q9" value="c" /> c) Discrete binary signal</label><br />
+          <label><input type="radio" name="q9" value="d" /> d) Voltage signal</label>
+        </div>
+        <div class="space-y-2">
+          <p class="font-medium">10. Which sensor would best detect the proximity of an object?</p>
+          <label><input type="radio" name="q10" value="a" /> a) LDR</label><br />
+          <label><input type="radio" name="q10" value="b" /> b) Proximity Sensor</label><br />
+          <label><input type="radio" name="q10" value="c" /> c) Thermistor</label><br />
+          <label><input type="radio" name="q10" value="d" /> d) Microphone</label>
+        </div>
         <button type="button" onclick="checkAnswers()" class="bg-blue-600 text-white px-4 py-2 rounded">Submit</button>
-        <div id="scoreResult" class="text-green-700"></div>
+        <div id="scoreResult" class="text-green-700 mt-4 font-semibold"></div>
       </form>
     </section>
   </main>
@@ -146,16 +180,22 @@
         q1: 'c',
         q2: 'b',
         q3: 'c',
+        q4: 'a',
+        q5: 'b',
+        q6: 'b',
+        q7: 'b',
+        q8: 'a',
+        q9: 'c',
+        q10: 'b'
       };
       let score = 0;
-      let total = Object.keys(correctAnswers).length;
-      for (let key in correctAnswers) {
-        const selected = document.querySelector(`input[name="${key}"]:checked`);
-        if (selected && selected.value === correctAnswers[key]) {
+      for (let q in correctAnswers) {
+        const selected = document.querySelector(`input[name="${q}"]:checked`);
+        if (selected && selected.value === correctAnswers[q]) {
           score++;
         }
       }
-      document.getElementById('scoreResult').innerText = `Your score: ${score}/${total}`;
+      document.getElementById("scoreResult").innerText = `Your score: ${score}/10`;
     }
   </script>
 </body>
