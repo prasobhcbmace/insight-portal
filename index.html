@@ -18,7 +18,6 @@
     <div class="container mx-auto px-4 flex space-x-4">
       <a href="#home" class="hover:underline font-medium">Home</a>
       <a href="#resources" class="hover:underline font-medium">Resources</a>
-      <a href="#assessment" class="hover:underline font-medium">Assessment</a>
       <a href="https://phet.colorado.edu/en/simulations/category/physics" target="_blank" class="hover:underline font-medium">Simulations</a>
     </div>
   </nav>
@@ -76,103 +75,102 @@
                 </li>
               </ul>
             </div>
+            <div class="mt-6" id="assessment">
+  <h3 class="font-semibold text-lg">📝 Assessment: Sensors</h3>
+  <form id="quizForm" class="space-y-6 mt-2 text-sm">
+    <div>
+      <p><strong>1. What is the primary function of a sensor?</strong></p>
+      <label><input type="radio" name="q1" value="a"> To display data</label><br>
+      <label><input type="radio" name="q1" value="b"> To transmit signals wirelessly</label><br>
+      <label><input type="radio" name="q1" value="c"> To detect and respond to physical input</label><br>
+      <label><input type="radio" name="q1" value="d"> To power measurement instruments</label>
+    </div>
+    <div>
+      <p><strong>2. Which of the following is a temperature sensor?</strong></p>
+      <label><input type="radio" name="q2" value="a"> Photodiode</label><br>
+      <label><input type="radio" name="q2" value="b"> Thermocouple</label><br>
+      <label><input type="radio" name="q2" value="c"> LVDT</label><br>
+      <label><input type="radio" name="q2" value="d"> Potentiometer</label>
+    </div>
+    <div>
+      <p><strong>3. What is the output of a capacitive sensor dependent on?</strong></p>
+      <label><input type="radio" name="q3" value="a"> Resistance</label><br>
+      <label><input type="radio" name="q3" value="b"> Current</label><br>
+      <label><input type="radio" name="q3" value="c"> Capacitance</label><br>
+      <label><input type="radio" name="q3" value="d"> Frequency</label>
+    </div>
+    <div>
+      <p><strong>4. LVDTs are used to measure:</strong></p>
+      <label><input type="radio" name="q4" value="a"> Displacement</label><br>
+      <label><input type="radio" name="q4" value="b"> Temperature</label><br>
+      <label><input type="radio" name="q4" value="c"> Humidity</label><br>
+      <label><input type="radio" name="q4" value="d"> Pressure</label>
+    </div>
+    <div>
+      <p><strong>5. A piezoelectric sensor is most sensitive to:</strong></p>
+      <label><input type="radio" name="q5" value="a"> Light</label><br>
+      <label><input type="radio" name="q5" value="b"> Vibration</label><br>
+      <label><input type="radio" name="q5" value="c"> Humidity</label><br>
+      <label><input type="radio" name="q5" value="d"> Displacement</label>
+    </div>
+    <div>
+      <p><strong>6. The unit of sensitivity is typically:</strong></p>
+      <label><input type="radio" name="q6" value="a"> Ohms</label><br>
+      <label><input type="radio" name="q6" value="b"> Output/Input</label><br>
+      <label><input type="radio" name="q6" value="c"> Watts</label><br>
+      <label><input type="radio" name="q6" value="d"> Hertz</label>
+    </div>
+    <div>
+      <p><strong>7. Which sensor works on the principle of resistance change due to strain?</strong></p>
+      <label><input type="radio" name="q7" value="a"> Capacitive sensor</label><br>
+      <label><input type="radio" name="q7" value="b"> Strain gauge</label><br>
+      <label><input type="radio" name="q7" value="c"> LVDT</label><br>
+      <label><input type="radio" name="q7" value="d"> Thermistor</label>
+    </div>
+    <div>
+      <p><strong>8. A Hall effect sensor detects:</strong></p>
+      <label><input type="radio" name="q8" value="a"> Magnetic fields</label><br>
+      <label><input type="radio" name="q8" value="b"> Light intensity</label><br>
+      <label><input type="radio" name="q8" value="c"> Displacement</label><br>
+      <label><input type="radio" name="q8" value="d"> Sound</label>
+    </div>
+    <div>
+      <p><strong>9. The calibration curve of a sensor is a plot of:</strong></p>
+      <label><input type="radio" name="q9" value="a"> Input vs. error</label><br>
+      <label><input type="radio" name="q9" value="b"> Output vs. frequency</label><br>
+      <label><input type="radio" name="q9" value="c"> Input vs. output</label><br>
+      <label><input type="radio" name="q9" value="d"> Error vs. sensitivity</label>
+    </div>
+    <div>
+      <p><strong>10. Which of these is a dynamic characteristic of sensors?</strong></p>
+      <label><input type="radio" name="q10" value="a"> Linearity</label><br>
+      <label><input type="radio" name="q10" value="b"> Time constant</label><br>
+      <label><input type="radio" name="q10" value="c"> Resolution</label><br>
+      <label><input type="radio" name="q10" value="d"> Accuracy</label>
+    </div>
+    <div class="mt-4">
+      <button type="button" onclick="checkAnswers()" class="bg-blue-600 text-white px-4 py-2 rounded">Submit</button>
+    </div>
+    <div id="scoreResult" class="mt-4 text-lg font-semibold"></div>
+  </form>
+</div>
             <div class="mt-6">
               <button class="accordion-button text-left w-full text-md font-medium bg-yellow-200 px-4 py-2 rounded" aria-expanded="false" onclick="toggleAccordion(this)">❓ FAQ: Sensors</button>
               <div class="accordion-content mt-2 px-4 py-2 bg-yellow-50 rounded text-sm space-y-3 text-gray-800">
-                <p><strong>Q:</strong> What is a General Measurement System and what are its key components?<br><strong>A:</strong> A general measurement system consists of sensing, signal conditioning, signal processing, and data presentation elements. It connects an observer to a process by transforming real-world variables into interpretable information.</p>
-                <p><strong>Q:</strong> How are sensors classified?<br><strong>A:</strong> Sensors are classified by the physical quantity measured, operating principle, signal type (analog/digital), power requirement (active/passive), and whether they operate by contact or not.</p>
-                <p><strong>Q:</strong> What are "static characteristics" of sensors and why are they important?<br><strong>A:</strong> These describe sensor behavior under steady-state conditions and include range, span, sensitivity, non-linearity, resolution, hysteresis, and calibration accuracy.</p>
-                <p><strong>Q:</strong> What are "dynamic characteristics" of sensors and when do they become important?<br><strong>A:</strong> Dynamic characteristics describe how sensors respond to rapidly changing inputs. They are modeled using differential equations and include time constant, damping ratio, and frequency response.</p>
-                <p><strong>Q:</strong> What are loading effects in measurement systems and how are input and output impedance related to them?<br><strong>A:</strong> Loading effects occur when a sensor draws energy from the system it measures, affecting accuracy. High input impedance minimizes this, and impedance matching improves signal transfer.</p>
-                <p><strong>Q:</strong> How do resistive elements function as sensors for displacement and strain?<br><strong>A:</strong> These change resistance when stretched or compressed. Potentiometers and strain gauges are common examples used to measure displacement and strain.</p>
-                <p><strong>Q:</strong> How do capacitive elements function as sensors for displacement and liquid level?<br><strong>A:</strong> They detect changes in capacitance due to displacement or fluid level. This may occur by changing the plate distance, area of overlap, or dielectric material.</p>
-                <p><strong>Q:</strong> What are Linear Variable Differential Transformers (LVDTs) and how do they measure displacement?<br><strong>A:</strong> LVDTs are non-contact sensors that convert linear displacement into an electrical signal using mutual inductance and AC excitation.</p>
-                <p><strong>Q:</strong> How do Hall Effect Sensors detect magnetic fields?<br><strong>A:</strong> Hall sensors detect magnetic fields via the Hall voltage generated when a current-carrying conductor is placed in a perpendicular magnetic field.</p>
+                <p><strong>Q:</strong> What is a General Measurement System and what are its key components?<br><strong>A:</strong> A system linking an observer to a process with four elements: sensing, signal conditioning, signal processing, and presentation. Often combined in a transducer.</p>
+                <p><strong>Q:</strong> How are sensors classified?<br><strong>A:</strong> Based on quantity measured, operating principle, signal type, power need, and contact type.</p>
+                <p><strong>Q:</strong> What are "static characteristics" of sensors?<br><strong>A:</strong> Range, span, transfer function, non-linearity, sensitivity, resolution, calibration, and hysteresis — crucial for steady-state performance.</p>
+                <p><strong>Q:</strong> What are "dynamic characteristics" and when are they important?<br><strong>A:</strong> Response to rapidly changing inputs. Includes time constant (1st order), damping ratio, and resonance (2nd order).</p>
+                <p><strong>Q:</strong> What are loading effects and impedance in sensors?<br><strong>A:</strong> Loading effects occur when sensors draw energy. Input/output impedance governs signal transfer efficiency.</p>
+                <p><strong>Q:</strong> How do resistive elements function as sensors?<br><strong>A:</strong> Potentiometers for displacement; strain gauges for deformation, both rely on change in resistance.</p>
+                <p><strong>Q:</strong> How do capacitive sensors measure displacement and level?<br><strong>A:</strong> Capacitance changes due to area, separation, or dielectric variation. Liquid level sensors use coaxial cylinders.</p>
+                <p><strong>Q:</strong> What are LVDTs and their working principle?<br><strong>A:</strong> Linear inductive transducers. AC excitation in a primary coil induces voltages in secondaries that vary with core position.</p>
+                <p><strong>Q:</strong> How do Hall Effect Sensors detect fields?<br><strong>A:</strong> Charge carriers deflect in a magnetic field, generating a transverse voltage proportional to the field strength.</p>
               </div>
             </div>
           </div>
         </div>
       </div>
-    </section>
-
-    <section id="assessment" class="mb-12">
-      <h2 class="text-xl font-semibold mb-4">Assessment: Sensors</h2>
-      <form id="quizForm" class="space-y-6">
-  <div>
-    <p><strong>1. What is the primary function of a sensor?</strong></p>
-    <label><input type="radio" name="q1" value="a"> To display data</label><br>
-    <label><input type="radio" name="q1" value="b"> To transmit signals wirelessly</label><br>
-    <label><input type="radio" name="q1" value="c"> To detect and respond to physical input</label><br>
-    <label><input type="radio" name="q1" value="d"> To power measurement instruments</label>
-  </div>
-  <div>
-    <p><strong>2. Which of the following is a temperature sensor?</strong></p>
-    <label><input type="radio" name="q2" value="a"> Photodiode</label><br>
-    <label><input type="radio" name="q2" value="b"> Thermocouple</label><br>
-    <label><input type="radio" name="q2" value="c"> LVDT</label><br>
-    <label><input type="radio" name="q2" value="d"> Potentiometer</label>
-  </div>
-  <div>
-    <p><strong>3. What is the output of a capacitive sensor dependent on?</strong></p>
-    <label><input type="radio" name="q3" value="a"> Resistance</label><br>
-    <label><input type="radio" name="q3" value="b"> Current</label><br>
-    <label><input type="radio" name="q3" value="c"> Capacitance</label><br>
-    <label><input type="radio" name="q3" value="d"> Frequency</label>
-  </div>
-  <div>
-    <p><strong>4. LVDTs are used to measure:</strong></p>
-    <label><input type="radio" name="q4" value="a"> Displacement</label><br>
-    <label><input type="radio" name="q4" value="b"> Temperature</label><br>
-    <label><input type="radio" name="q4" value="c"> Humidity</label><br>
-    <label><input type="radio" name="q4" value="d"> Pressure</label>
-  </div>
-  <div>
-    <p><strong>5. A piezoelectric sensor is most sensitive to:</strong></p>
-    <label><input type="radio" name="q5" value="a"> Light</label><br>
-    <label><input type="radio" name="q5" value="b"> Vibration</label><br>
-    <label><input type="radio" name="q5" value="c"> Humidity</label><br>
-    <label><input type="radio" name="q5" value="d"> Displacement</label>
-  </div>
-  <div>
-    <p><strong>6. The unit of sensitivity is typically:</strong></p>
-    <label><input type="radio" name="q6" value="a"> Ohms</label><br>
-    <label><input type="radio" name="q6" value="b"> Output/Input</label><br>
-    <label><input type="radio" name="q6" value="c"> Watts</label><br>
-    <label><input type="radio" name="q6" value="d"> Hertz</label>
-  </div>
-  <div>
-    <p><strong>7. Which sensor works on the principle of resistance change due to strain?</strong></p>
-    <label><input type="radio" name="q7" value="a"> Capacitive sensor</label><br>
-    <label><input type="radio" name="q7" value="b"> Strain gauge</label><br>
-    <label><input type="radio" name="q7" value="c"> LVDT</label><br>
-    <label><input type="radio" name="q7" value="d"> Thermistor</label>
-  </div>
-  <div>
-    <p><strong>8. A Hall effect sensor detects:</strong></p>
-    <label><input type="radio" name="q8" value="a"> Magnetic fields</label><br>
-    <label><input type="radio" name="q8" value="b"> Light intensity</label><br>
-    <label><input type="radio" name="q8" value="c"> Displacement</label><br>
-    <label><input type="radio" name="q8" value="d"> Sound</label>
-  </div>
-  <div>
-    <p><strong>9. The calibration curve of a sensor is a plot of:</strong></p>
-    <label><input type="radio" name="q9" value="a"> Input vs. error</label><br>
-    <label><input type="radio" name="q9" value="b"> Output vs. frequency</label><br>
-    <label><input type="radio" name="q9" value="c"> Input vs. output</label><br>
-    <label><input type="radio" name="q9" value="d"> Error vs. sensitivity</label>
-  </div>
-  <div>
-    <p><strong>10. Which of these is a dynamic characteristic of sensors?</strong></p>
-    <label><input type="radio" name="q10" value="a"> Linearity</label><br>
-    <label><input type="radio" name="q10" value="b"> Time constant</label><br>
-    <label><input type="radio" name="q10" value="c"> Resolution</label><br>
-    <label><input type="radio" name="q10" value="d"> Accuracy</label>
-  </div>
-  <div class="mt-4">
-    <button type="button" onclick="checkAnswers()" class="bg-blue-600 text-white px-4 py-2 rounded">Submit</button>
-  </div>
-  <div id="scoreResult" class="mt-4 text-lg font-semibold"></div>
-      </form>
     </section>
   </main>
 
@@ -186,29 +184,6 @@
       button.setAttribute("aria-expanded", !expanded);
       const content = button.nextElementSibling;
       content.classList.toggle("hidden");
-    }
-
-    function checkAnswers() {
-      const correctAnswers = {
-        q1: 'c',
-        q2: 'b',
-        q3: 'c',
-        q4: 'a',
-        q5: 'b',
-        q6: 'b',
-        q7: 'b',
-        q8: 'a',
-        q9: 'c',
-        q10: 'b'
-      };
-      let score = 0;
-      for (let q in correctAnswers) {
-        const selected = document.querySelector(`input[name="${q}"]:checked`);
-        if (selected && selected.value === correctAnswers[q]) {
-          score++;
-        }
-      }
-      document.getElementById("scoreResult").innerText = `Your score: ${score}/10`;
     }
   </script>
 </body>
