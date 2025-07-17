@@ -98,8 +98,80 @@
     <section id="assessment" class="mb-12">
       <h2 class="text-xl font-semibold mb-4">Assessment: Sensors</h2>
       <form id="quizForm" class="space-y-6">
-        <!-- MCQs (10) stay here -->
-        <!-- Unchanged -->
+  <div>
+    <p><strong>1. What is the primary function of a sensor?</strong></p>
+    <label><input type="radio" name="q1" value="a"> To display data</label><br>
+    <label><input type="radio" name="q1" value="b"> To transmit signals wirelessly</label><br>
+    <label><input type="radio" name="q1" value="c"> To detect and respond to physical input</label><br>
+    <label><input type="radio" name="q1" value="d"> To power measurement instruments</label>
+  </div>
+  <div>
+    <p><strong>2. Which of the following is a temperature sensor?</strong></p>
+    <label><input type="radio" name="q2" value="a"> Photodiode</label><br>
+    <label><input type="radio" name="q2" value="b"> Thermocouple</label><br>
+    <label><input type="radio" name="q2" value="c"> LVDT</label><br>
+    <label><input type="radio" name="q2" value="d"> Potentiometer</label>
+  </div>
+  <div>
+    <p><strong>3. What is the output of a capacitive sensor dependent on?</strong></p>
+    <label><input type="radio" name="q3" value="a"> Resistance</label><br>
+    <label><input type="radio" name="q3" value="b"> Current</label><br>
+    <label><input type="radio" name="q3" value="c"> Capacitance</label><br>
+    <label><input type="radio" name="q3" value="d"> Frequency</label>
+  </div>
+  <div>
+    <p><strong>4. LVDTs are used to measure:</strong></p>
+    <label><input type="radio" name="q4" value="a"> Displacement</label><br>
+    <label><input type="radio" name="q4" value="b"> Temperature</label><br>
+    <label><input type="radio" name="q4" value="c"> Humidity</label><br>
+    <label><input type="radio" name="q4" value="d"> Pressure</label>
+  </div>
+  <div>
+    <p><strong>5. A piezoelectric sensor is most sensitive to:</strong></p>
+    <label><input type="radio" name="q5" value="a"> Light</label><br>
+    <label><input type="radio" name="q5" value="b"> Vibration</label><br>
+    <label><input type="radio" name="q5" value="c"> Humidity</label><br>
+    <label><input type="radio" name="q5" value="d"> Displacement</label>
+  </div>
+  <div>
+    <p><strong>6. The unit of sensitivity is typically:</strong></p>
+    <label><input type="radio" name="q6" value="a"> Ohms</label><br>
+    <label><input type="radio" name="q6" value="b"> Output/Input</label><br>
+    <label><input type="radio" name="q6" value="c"> Watts</label><br>
+    <label><input type="radio" name="q6" value="d"> Hertz</label>
+  </div>
+  <div>
+    <p><strong>7. Which sensor works on the principle of resistance change due to strain?</strong></p>
+    <label><input type="radio" name="q7" value="a"> Capacitive sensor</label><br>
+    <label><input type="radio" name="q7" value="b"> Strain gauge</label><br>
+    <label><input type="radio" name="q7" value="c"> LVDT</label><br>
+    <label><input type="radio" name="q7" value="d"> Thermistor</label>
+  </div>
+  <div>
+    <p><strong>8. A Hall effect sensor detects:</strong></p>
+    <label><input type="radio" name="q8" value="a"> Magnetic fields</label><br>
+    <label><input type="radio" name="q8" value="b"> Light intensity</label><br>
+    <label><input type="radio" name="q8" value="c"> Displacement</label><br>
+    <label><input type="radio" name="q8" value="d"> Sound</label>
+  </div>
+  <div>
+    <p><strong>9. The calibration curve of a sensor is a plot of:</strong></p>
+    <label><input type="radio" name="q9" value="a"> Input vs. error</label><br>
+    <label><input type="radio" name="q9" value="b"> Output vs. frequency</label><br>
+    <label><input type="radio" name="q9" value="c"> Input vs. output</label><br>
+    <label><input type="radio" name="q9" value="d"> Error vs. sensitivity</label>
+  </div>
+  <div>
+    <p><strong>10. Which of these is a dynamic characteristic of sensors?</strong></p>
+    <label><input type="radio" name="q10" value="a"> Linearity</label><br>
+    <label><input type="radio" name="q10" value="b"> Time constant</label><br>
+    <label><input type="radio" name="q10" value="c"> Resolution</label><br>
+    <label><input type="radio" name="q10" value="d"> Accuracy</label>
+  </div>
+  <div class="mt-4">
+    <button type="button" onclick="checkAnswers()" class="bg-blue-600 text-white px-4 py-2 rounded">Submit</button>
+  </div>
+  <div id="scoreResult" class="mt-4 text-lg font-semibold"></div>
       </form>
     </section>
   </main>
